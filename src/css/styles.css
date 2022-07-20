@@ -1,0 +1,70 @@
+/* ******************************************* */
+/* Header */
+/* ******************************************* */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9ecef;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.header-title {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4.8rem;
+}
+
+.nav-list-item:link,
+.nav-list-item:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-list-item:hover,
+.nav-list-item:active {
+  color: #111;
+}
+/* ******************************************* */
+/* Hero Section */
+/* ******************************************* */
+
+.section-hero {
+  background-color: #e9ecef;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.hero-img {
+  width: 100%;
+}
