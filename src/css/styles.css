@@ -12,10 +12,10 @@
   padding: 0 4.8rem;
 }
 
-.header-title {
+header p {
   text-decoration: none;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #555;
 }
@@ -31,7 +31,7 @@
 .nav-list-item:visited {
   text-decoration: none;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #555;
   font-weight: 500;
   transition: all 0.3s;
@@ -61,10 +61,104 @@
 }
 
 .hero-description {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.6;
 }
 
 .hero-img {
   width: 100%;
+}
+
+/* ******************************************* */
+/* Personal Statement Section */
+/* ******************************************* */
+
+.section-personal {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.personal-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* ******************************************* */
+/* Technical Skills Section */
+/* ******************************************* */
+
+.section-technical {
+  background-color: #dee2e6;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.technical {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.technical-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #333;
+  list-style: none;
+}
+
+/* ******************************************* */
+/* Qualifications Section */
+/* ******************************************* */
+
+.section-qualification {
+  background-color: #495057;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.section-qualification h2 {
+  color: #dee2e6;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+  background-color: #fff;
+}
+
+.qualifications-tab {
+  transform: translateY(-50%);
+  color: #dee2e6;
+}
+
+.qualifications-tab {
+  color: #333;
+  background-color: #dee2e6;
+}
+
+.qualifications-tab:hover {
+  color: #555;
+  background-color: #e9ecef;
+}
+
+.qualification-tab-active {
+  transform: translateY(-66%);
+}
+
+.qualification-content {
+  display: none;
+  color: #333;
+  height: 25rem;
+
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.qualification-content-active {
+  display: block;
+  background-color: #fff;
 }
