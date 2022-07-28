@@ -77,3 +77,16 @@ span {
 .span-hidden {
   visibility: hidden;
 }
+
+.card-container {
+  display: flex;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 9.6rem;
+}
+
+.card {
+  display: inline-block;
+  background-color: #fff;
+  padding: 3.2rem 2.4rem;
+}

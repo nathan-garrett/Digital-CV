@@ -109,6 +109,9 @@ header p {
   font-weight: 400;
   color: #333;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 /* ******************************************* */
@@ -161,4 +164,76 @@ header p {
 .qualification-content-active {
   display: block;
   background-color: #fff;
+}
+
+/* ******************************************* */
+/* Work History Section */
+/* ******************************************* */
+
+.section-work {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: #e9ecef;
+}
+
+.title-color {
+  color: #333;
+}
+
+.work-job {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.work-list {
+  list-style: none;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* ******************************************* */
+/* Project Portfolio Section */
+/* ******************************************* */
+
+.section-project {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.project-card {
+  background-color: #dee2e6;
+}
+
+.project-img {
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+.project-title {
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.project-text {
+  margin-bottom: 3.2rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 4.8rem;
+  justify-content: center;
+}
+
+.project-link {
+  text-decoration: none;
+  padding: 1.25rem 4.5rem;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #333;
+  /* font-family: inherit;/ */
 }
