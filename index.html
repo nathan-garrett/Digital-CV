@@ -1,18 +1,340 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <meta name="description" content="Nathan Garrett's digital CV." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="src/css/general.css" />
     <link rel="stylesheet" href="src/css/styles.css" />
-    <script src="src/js/script.js" async defer></script>
-    <title>Nathan Garret's Digital CV</title>
+    <link rel="stylesheet" href="src/css/queries.css" />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="src/js/script.js"></script>
+    <title>Nathan Garrett's &mdash; Digital CV</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="header">
+      <a class="header-title" href="#"><p>Nathan Garrett's Digital CV</p></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="nav-list-item" href="#personal">Personal Statement</a>
+          </li>
+          <li>
+            <a class="nav-list-item" href="#technical">Technical Skills</a>
+          </li>
+          <li>
+            <a class="nav-list-item" href="#qualification">Qualifications</a>
+          </li>
+          <li><a class="nav-list-item" href="#work">Work History</a></li>
+          <li>
+            <a class="nav-list-item" href="#project">Project Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text">
+            <h1 class="primary-heading">Looking for a new opportunity</h1>
+            <p class="hero-description">
+              I chose to complete a degree to better myself, now I wish to put
+              what I have learnt into practice. I have a career goal of becoming
+              a developer and I am not afraid to put in the work to achieve it.
+            </p>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="src/img/computers.jpg"
+              alt="A computer on a desk with three monitors, a keyboard and mouse"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-personal" id="personal">
+        <div class="container">
+          <h2 class="secondary-heading">Personal Statement</h2>
+          <p class="personal-text">
+            Having graduated with a BSc (Hons) in Computing and Internet
+            Technology, I am now looking for a position to enable me to develop
+            my career with the IT Industry. The skills I have acquired during my
+            degree along with online courses have given me a foundation which I
+            want to build upon and further my knowledge within this challenging
+            industry. I am willing to learning new frameworks, business concepts
+            and keen to gain experience within an IT related field.
+            Unfortunately, due to the pandemic I was unable to complete any work
+            experience during my degree, but since completing my degree, I have
+            undertaken online courses to help improve upon my existing skills
+            and expand my skill set. I am passionate about IT and learning and
+            want to use this in my career as a web/software developer, whilst
+            working as a team to achieve business goals.
+          </p>
+        </div>
+      </section>
+      <section class="section-technical" id="technical">
+        <div class="technical">
+          <div class="technical-text">
+            <h2 class="secondary-heading">Technical Skills</h2>
+            <ul class="technical-description">
+              <li class="technical-list-item">
+                Competent with using windows-based systems.
+              </li>
+              <li class="technical-list-item">
+                Competent using HTML5, CSS3 and JavaScript.
+              </li>
+              <li class="technical-list-item">
+                Previous experience with C# and ASP.NET.
+              </li>
+              <li class="technical-list-item">
+                Previous experience SQL and relational databases.
+              </li>
+              <li class="technical-list-item">GIT.</li>
+              <li class="technical-list-item">
+                Understanding of software development lifecycles.
+              </li>
+              <li class="technical-list-item">
+                Understanding of design patterns.
+              </li>
+              <li class="technical-list-item">
+                Proficient using Microsoft Office 365.
+              </li>
+            </ul>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="src/img/laptop.jpg"
+              alt="A computer on a desk with three monitors, a keyboard and mouse"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-qualification" id="qualification">
+        <div class="container">
+          <h2 class="secondary-heading">Qualifications</h2>
+          <div class="tabs-container">
+            <button
+              class="btn tab-1 qualifications-tab qualification-tab-active"
+              data-tab="1"
+            >
+              GCSE
+            </button>
+            <button class="btn tab-2 qualifications-tab" data-tab="2">
+              A-Levels
+            </button>
+            <button class="btn tab-3 qualifications-tab" data-tab="3">
+              Degree
+            </button>
+            <button class="btn tab-4 qualifications-tab" data-tab="4">
+              Other
+            </button>
+          </div>
+          <div
+            class="qualification-content qualification-content-1 qualification-content-active"
+          >
+            <span>2002 - 2007</span>
+            <h3 class="tertiary-heading">The King Alfred's School</h3>
+            <p>
+              History (A), Mathematics (B), Statistics (B), Science: Double
+              Award (BB), Design and Technology (B), Media Studies (B), English
+              (C), Business Studies and Economics (C), ICT (C)
+            </p>
+          </div>
+          <div class="qualification-content qualification-content-2">
+            <span>2007 - 2009</span>
+            <h3 class="tertiary-heading">The King Alfred's School</h3>
+            <p>
+              History (C), Business Studies and Economics (D), Applied ICT (D)
+            </p>
+          </div>
+          <div class="qualification-content qualification-content-3">
+            <span>2018 - 2021</span>
+            <h3 class="tertiary-heading">University Centre Somerset</h3>
+            <p>
+              BSC (Hons) Computing and Internet Technologies, Second Class
+              (Upper division)
+            </p>
+          </div>
+          <div class="qualification-content qualification-content-4">
+            <span class="span-hidden">whitespace</span>
+            <h3 class="tertiary-heading">Other Qualifications</h3>
+            <p>
+              AI-900: Microsoft Azure AI Fundamentals Certification Full UK
+              <br />
+              Driving License
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-work" id="work">
+        <div class="container">
+          <h2 class="secondary-heading">Work History</h2>
+          <div class="card-container">
+            <div class="card">
+              <span class="work-year">2007 - 03/2020</span>
+              <h3 class="tertiary-heading title-color">The Artful Dodger</h3>
+              <p class="work-job">Kitchen Staff</p>
+              <ul class="work-list">
+                <li>
+                  Food preparation to assist the cook to speed up the completion
+                  of customer orders.
+                </li>
+                <li>Covered the cook when they took a break.</li>
+                <li>Served food to customers in a timely manner.</li>
+                <li>
+                  Communicated any delays to waiting staff so they could inform
+                  customers.
+                </li>
+                <li>
+                  Kept work area clean and tidy to comply with health and
+                  hygiene.
+                </li>
+                <li>
+                  Checked stock on delivery to ensure correct stock was
+                  delivered.
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <span class="work-year">05/2021 - Present</span>
+              <h3 class="tertiary-heading title-color">The Front Parlour</h3>
+              <p class="work-job">Kitchen Staff</p>
+              <ul class="work-list">
+                <li>
+                  Food preparation to assist the cook to speed up the completion
+                  of customer orders.
+                </li>
+                <li>Served food to customers in a timely manner.</li>
+                <li>
+                  Kept work area clean and tidy to comply with health and
+                  hygiene.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-project" id="project">
+        <div class="container">
+          <h2 class="secondary-heading">Project Portfolio</h2>
+          <div class="card-container">
+            <div class="card project-card">
+              <img
+                class="project-img"
+                src="src/img/omnifood.PNG"
+                alt="Omnifood website"
+              />
+              <h3 class="tertiary-heading project-title">Omnifood</h3>
+              <p class="project-text">
+                Responsive website showcasing HTML and CSS with a small amount
+                of JavaScript.
+              </p>
+              <div class="project-links">
+                <a class="project-link" href="#">GitHub</a>
+                <a
+                  class="project-link"
+                  href="https://nathans-portfolio-project-omnifood.netlify.app/"
+                  target="_blank"
+                >
+                  Omnifood
+                </a>
+              </div>
+            </div>
+            <div class="card project-card">
+              <img
+                class="project-img"
+                src="src/img/forkify.PNG"
+                alt="Omnifood website"
+              />
+              <h3 class="tertiary-heading project-title">Forkify</h3>
+              <p class="project-text">
+                Javascript application for searching and bookmarking recipes or
+                creating your own.
+              </p>
+              <div class="project-links">
+                <a class="project-link" href="#">GitHub</a>
+                <a
+                  class="project-link"
+                  href="https://nathans-fortify-portfolio-project.netlify.app/"
+                  target="_blank"
+                >
+                  Forkify
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="address">
+          <h4 class="footer-heading">Address</h4>
+          <p class="footer-text">39 Lynton Road</p>
+          <p class="footer-text">Burnham-on-Sea</p>
+          <p class="footer-text">Somerset</p>
+          <p class="footer-text">TA8 1PW</p>
+        </div>
+        <div class="email">
+          <h4 class="footer-heading">Email</h4>
+          <p class="footer-text">nathangarrett@live.co.uk</p>
+        </div>
+        <div class="Mobile">
+          <h4 class="footer-heading">Mobile</h4>
+          <p class="footer-text">07716099403</p>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-heading">Navigation</h4>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li>
+                <a class="footer-list-item" href="#personal"
+                  >Personal Statement</a
+                >
+              </li>
+              <li>
+                <a class="footer-list-item" href="#technical"
+                  >Technical Skills</a
+                >
+              </li>
+              <li>
+                <a class="footer-list-item" href="#qualification"
+                  >Qualifications</a
+                >
+              </li>
+              <li><a class="footer-list-item" href="#work">Work History</a></li>
+              <li>
+                <a class="footer-list-item" href="#project"
+                  >Project Portfolio</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
