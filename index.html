@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
     <meta name="description" content="Nathan Garrett's digital CV." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,10 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="src/css/general.css" />
     <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/queries.css" />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <script defer src="src/js/script.js"></script>
-    <title>Nathan Garret's Digital CV</title>
+    <title>Nathan Garrett's &mdash; Digital CV</title>
   </head>
   <body>
     <header class="header">
@@ -37,18 +49,20 @@
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text">
-            <h1 class="primary-heading">Looking for a new career</h1>
+            <h1 class="primary-heading">Looking for a new opportunity</h1>
             <p class="hero-description">
-              I am looking for a position to enable me to develop my career
-              within the IT Industry. Willing to learn new frameworks, business
-              concepts and keen to gain experience. I am passionate about IT and
-              learning and want to use this in my career, whilst working as a
-              team to achieve business goals.
+              I chose to complete a degree to better myself, now I wish to put
+              what I have learnt into practice. I have a career goal of becoming
+              a developer and I am not afraid to put in the work to achieve it.
             </p>
           </div>
           <div class="hero-img-box">
@@ -92,18 +106,20 @@
                 Competent using HTML5, CSS3 and JavaScript.
               </li>
               <li class="technical-list-item">
-                SQL and developing relational databases.
+                Previous experience with C# and ASP.NET.
               </li>
-              <li class="technical-list-item">GIT</li>
+              <li class="technical-list-item">
+                Previous experience SQL and relational databases.
+              </li>
+              <li class="technical-list-item">GIT.</li>
               <li class="technical-list-item">
                 Understanding of software development lifecycles.
               </li>
               <li class="technical-list-item">
-                Understanding of design patterns (I.e., SOLID).
+                Understanding of design patterns.
               </li>
               <li class="technical-list-item">
-                Proficient using Microsoft Office 365 including Excel, Visio and
-                Word.
+                Proficient using Microsoft Office 365.
               </li>
             </ul>
           </div>
@@ -233,10 +249,8 @@
               />
               <h3 class="tertiary-heading project-title">Omnifood</h3>
               <p class="project-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tenetur sunt nostrum repellat optio asperiores provident esse
-                quisquam laboriosam, dolores corrupti vitae recusandae
-                repellendus? Sunt consequuntur et placeat odit pariatur minima?
+                Responsive website showcasing HTML and CSS with a small amount
+                of JavaScript.
               </p>
               <div class="project-links">
                 <a class="project-link" href="#">GitHub</a>
@@ -257,10 +271,8 @@
               />
               <h3 class="tertiary-heading project-title">Forkify</h3>
               <p class="project-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tenetur sunt nostrum repellat optio asperiores provident esse
-                quisquam laboriosam, dolores corrupti vitae recusandae
-                repellendus? Sunt consequuntur et placeat odit pariatur minima?
+                Javascript application for searching and bookmarking recipes or
+                creating your own.
               </p>
               <div class="project-links">
                 <a class="project-link" href="#">GitHub</a>
@@ -277,6 +289,52 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="address">
+          <h4 class="footer-heading">Address</h4>
+          <p class="footer-text">39 Lynton Road</p>
+          <p class="footer-text">Burnham-on-Sea</p>
+          <p class="footer-text">Somerset</p>
+          <p class="footer-text">TA8 1PW</p>
+        </div>
+        <div class="email">
+          <h4 class="footer-heading">Email</h4>
+          <p class="footer-text">nathangarrett@live.co.uk</p>
+        </div>
+        <div class="Mobile">
+          <h4 class="footer-heading">Mobile</h4>
+          <p class="footer-text">07716099403</p>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-heading">Navigation</h4>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li>
+                <a class="footer-list-item" href="#personal"
+                  >Personal Statement</a
+                >
+              </li>
+              <li>
+                <a class="footer-list-item" href="#technical"
+                  >Technical Skills</a
+                >
+              </li>
+              <li>
+                <a class="footer-list-item" href="#qualification"
+                  >Qualifications</a
+                >
+              </li>
+              <li><a class="footer-list-item" href="#work">Work History</a></li>
+              <li>
+                <a class="footer-list-item" href="#project"
+                  >Project Portfolio</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

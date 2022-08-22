@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -37,7 +38,6 @@ body {
 .tertiary-heading {
   font-size: 3rem;
   font-weight: 500;
-  /* text-transform: uppercase; */
   margin-bottom: 3.2rem;
 }
 .container {
@@ -79,14 +79,15 @@ span {
 }
 
 .card-container {
-  display: flex;
-  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   gap: 9.6rem;
 }
 
 .card {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: #fff;
   padding: 3.2rem 2.4rem;
 }
